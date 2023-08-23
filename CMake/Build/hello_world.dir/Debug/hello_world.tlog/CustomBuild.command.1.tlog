@@ -1,0 +1,10 @@
+^C:\USERS\ETREH\DOCUMENTS\PROGRAMMING\OTUS\C++_DEVELOPER_2023_06\BASIC\HOME_WORK_2\CMAKE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/etreh/Documents/Programming/Otus/C++_Developer_2023_06/Basic/home_work_2/CMake -BC:/Users/etreh/Documents/Programming/Otus/C++_Developer_2023_06/Basic/home_work_2/CMake/Build --check-stamp-file C:/Users/etreh/Documents/Programming/Otus/C++_Developer_2023_06/Basic/home_work_2/CMake/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
